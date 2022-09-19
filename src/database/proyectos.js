@@ -31,8 +31,8 @@ export const proyectos = [
     titulo: "Landing Page Personal",
     descripcion:
       "Página web personal con información de perfil, estudios, portafolio y contacto.",
-    url: "https://blog.ida.cl/wp-content/uploads/sites/5/2020/04/tamano-redes-blog-655x470.png",
-    url_preview: "https://facebook.com",
-    url_github: "https://facebook.com",
+    url: "https://firebasestorage.googleapis.com/v0/b/landing-page-josebeap.appspot.com/o/portafolio%2FAplicacion-landing.png?alt=media&token=be8dea25-fc42-4143-83e2-415df31b41fc",
+    url_preview: "https://landing-page-josebeap.firebaseapp.com/",
+    url_github: "https://github.com/josebeap/landing-page",
   },
 ];
