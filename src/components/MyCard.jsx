@@ -1,7 +1,7 @@
 export const MyCard = ({ url, titulo, descripcion, url_preview }) => {
   return (
-    <div className='m-6 px-5 py-5 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700 rounded-2xl'>
-      <a href='#'>
+    <div className='m-6 px-5 py-5 max-w-sm bg-white border border-gray-200 shadow-md dark:bg-black dark:border-gray-700 rounded-2xl'>
+      <a className='rounded-2xl' href='#'>
         <img src={url} />
       </a>
       <div className='p-5'>

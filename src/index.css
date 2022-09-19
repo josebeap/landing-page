@@ -11,6 +11,13 @@ section {
   place-items: center;
   height: 100vh;
 }
+/*
+footer{
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}*/
 
 .nav {
   display: flex;
@@ -60,3 +67,22 @@ ul {
 a {
   cursor: pointer;
 }
+
+.imgPersonal{
+  position: flex;
+  width: 300px;
+  height: 370px;
+  top: 190px;
+  margin-left: 120px;
+}
+
+.text-font-1{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.text-font-2{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+

@@ -37,9 +37,11 @@ export const Navbar = () => {
               <Link to='/estudios'>
                 <span className='ml-2 text-white text-xl'>Estudios</span>
               </Link>
+              {/*
               <Link to='/experiencia'>
                 <span className='ml-2 text-white text-xl'>Experiencia</span>
               </Link>
+              */}
               <Link to='/portafolio'>
                 <span className='ml-2 text-white text-xl'>Portafolio</span>
               </Link>
