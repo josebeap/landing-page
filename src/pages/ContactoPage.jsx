@@ -19,6 +19,9 @@ export const ContactoPage = () => {
       return;
     }
 
+    // Ejercico finalizado
+    sendEmail();
+
     setError(false);
 
     // Limpiar nuestro Formulario
@@ -26,9 +29,6 @@ export const ContactoPage = () => {
     setCorreo("");
     setCelular("");
     setMensaje("");
-
-    // Ejercico finalizado
-    alert("Datos enviados");
   };
 
   // Modal de exito!
@@ -39,6 +39,56 @@ export const ContactoPage = () => {
       confirmButtonText: "Aceptar 😎",
     });
   };
+
+  //Envio de correo (No me funciona :( )
+
+  function sendEmail() {
+    let nombre = document.getElementById("nombres").value;
+    let telefono = document.getElementById("celular").value;
+    let email = document.getElementById("correo").value;
+    let info = document.getElementById("mensaje").value;
+    let mensaje =
+      "nombre: " +
+      nombre +
+      "<br>" +
+      "email: " +
+      email +
+      "<br>" +
+      "celular: " +
+      telefono +
+      "<br>" +
+      "Mensaje: " +
+      info +
+      "<br>" +
+      "He recibido su información y mensaje";
+    console.log(nombre, email);
+    sendEmailCliente(nombre, email, mensaje);
+    sendEmailRestaurante(nombre, email, mensaje);
+
+    alert("Solicitud reserva exitosa");
+  }
+  function sendEmailCliente(nombre, email, mensaje) {
+    window.Email.send({
+      Host: "smtp.gmail.com",
+      Username: "josebeap11@gmail.com",
+      Password: "cxhzyeouzvursgyn",
+      To: email,
+      From: "josebeap11@gmail.com",
+      Subject: nombre + ", Se ha contactado con Jose Beltran",
+      Body: mensaje,
+    });
+  }
+  function sendEmailRestaurante(nombre, email, mensaje) {
+    window.Email.send({
+      Host: "smtp.gmail.com",
+      Username: "josebeap11@gmail.com",
+      Password: "cxhzyeouzvursgyn",
+      To: "josebeap99@gmail.com",
+      From: "josebeap11@gmail.com",
+      Subject: nombre + " Ha realizado una solicitud de contacto",
+      Body: nombre + "<br>" + email + "<br> " + mensaje,
+    });
+  }
 
   return (
     <>
@@ -68,7 +118,7 @@ export const ContactoPage = () => {
             </div>
             <div className='mb-5'>
               <label
-                htmlFor='nombres'
+                htmlFor='celular'
                 className='block text-gray-700 uppercase font-bold'
               >
                 Celular 📱
@@ -84,7 +134,7 @@ export const ContactoPage = () => {
             </div>
             <div className='mb-5'>
               <label
-                htmlFor='nombres'
+                htmlFor='correo'
                 className='block text-gray-700 uppercase font-bold'
               >
                 Correo 📧

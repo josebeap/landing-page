@@ -29,13 +29,19 @@ export const Navbar = () => {
           >
             <ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
               <Link to='/inicio'>
-                <span className='ml-2 text-white text-xl'>Inicio</span>
+                <span className='ml-2 text-white text-xl hover:bg-orange-800'>
+                  Inicio
+                </span>
               </Link>
               <Link to='/perfil'>
-                <span className='ml-2 text-white text-xl'>Perfil</span>
+                <span className='ml-2 text-white text-xl hover:bg-orange-800'>
+                  Perfil
+                </span>
               </Link>
               <Link to='/estudios'>
-                <span className='ml-2 text-white text-xl'>Estudios</span>
+                <span className='ml-2 text-white text-xl hover:bg-orange-800'>
+                  Estudios
+                </span>
               </Link>
               {/*
               <Link to='/experiencia'>
@@ -43,10 +49,14 @@ export const Navbar = () => {
               </Link>
               */}
               <Link to='/portafolio'>
-                <span className='ml-2 text-white text-xl'>Portafolio</span>
+                <span className='ml-2 text-white text-xl hover:bg-orange-800'>
+                  Portafolio
+                </span>
               </Link>
               <Link to='/contacto'>
-                <span className='ml-2 text-white text-xl'>Contacto</span>
+                <span className='ml-2 text-white text-xl hover:bg-orange-800'>
+                  Contacto
+                </span>
               </Link>
             </ul>
           </div>

@@ -1,20 +1,11 @@
-import React from "react";
+import { ImgPerfil } from "../components/ImgPerfil";
 
 export const PerfilPage = () => {
   return (
     <>
       <div className='flex pb-12'>
         <div className='w-1/2 p-10'>
-          <h1 className='not-italic font-normal text-5xl text-white'>Hola,</h1>
-          <h1 className='not-italic font-normal text-5xl text-white'>
-            Mi nombre es{" "}
-            <span className='not-italic font-normal text-5xl text-orange-400'>
-              Jose Beltran
-            </span>
-          </h1>
-          <span className='not-italic font-normal text-5xl text-orange-500'>
-            Desarrollador Web
-          </span>
+          <ImgPerfil />
         </div>
         <div className='w-1/2 p-20'>
           <p className='text-white text-font-1 text-2xl'>

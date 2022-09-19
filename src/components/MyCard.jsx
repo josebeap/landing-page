@@ -18,7 +18,7 @@ export const MyCard = ({ url, titulo, descripcion, url_preview }) => {
           target='_blank'
           className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:bg-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-800'
         >
-          Read more
+          Saber más... 👨‍🎓
           <svg
             aria-hidden='true'
             className='ml-2 -mr-1 w-4 h-4'
