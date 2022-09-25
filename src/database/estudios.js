@@ -37,7 +37,7 @@ export const estudios = [
     id: 5,
     titulo: "FIMLM",
     descripcion: "Diplomado en desarrollo Fronted con React Js",
-    url: "https://firebasestorage.googleapis.com/v0/b/landing-page-josebeap.appspot.com/o/estudios%2FFundaci%C3%B3n_Internacional_Mar%C3%ADa_Luisa_de_Moreno.png?alt=media&token=a4eb4c62-aaf1-42e2-86d6-eb067cf64198",
-    url_preview: "https://colombia.marialuisa.foundation/",
+    url: "http://images.fimlm.org/campus/CampusFIMLMMini.png",
+    url_preview: "https://colombia.marialuisa.foundation/campus/",
   },
 ];
